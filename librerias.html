@@ -1,0 +1,53 @@
+
+<!-- Marketing Tag Related CSS Files (preload files) -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+<link rel="preload" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" as="script">
+
+
+<!-- Example -->
+
+<div class="qp-nav-backdrop"></div>
+<div id="g-recaptcha" class="g-recaptcha"></div>
+<script defer async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+<!--  Video Carousel JS CDN File  -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!--<script defer async src="/javascript/qphome/qp_outside_concat_v16_17.min.js?version=0.1"></script>-->
+<script src="$qp-common-script-v2-js"></script>
+<script>
+
+  /*This code is related to video carousel*/
+  $('.responsive ').slick({
+      dots: true,
+      infinite: false,
+      speed: 800,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+      responsive: [
+          {
+              breakpoint: 1024,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+              }
+          },
+          {
+              breakpoint: 1024,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: false
+              }
+          }
+      ]
+  });
+</script>
